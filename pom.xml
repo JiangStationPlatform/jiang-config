@@ -7,7 +7,6 @@
         <groupId>cn.jiang</groupId>
         <artifactId>jiang-dependencies</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../jiang-dependencies/pom.xml</relativePath>
     </parent>
 
     <artifactId>jiang-config</artifactId>
