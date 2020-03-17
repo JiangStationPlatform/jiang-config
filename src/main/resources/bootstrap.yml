@@ -23,7 +23,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://35.241.113.30:8761/eureka/
+      defaultZone: http://35.241.113.30:8761/eureka/,http://35.241.113.30:8861/eureka/,http://35.241.113.30:8961/eureka/
 
 management:
   endpoint:
