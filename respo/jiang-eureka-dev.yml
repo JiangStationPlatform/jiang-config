@@ -13,7 +13,7 @@ server:
 
 eureka:
   instance:
-    hostname: 35.241.113.30
+    hostname: host
   client:
 #    false为单机版，true为集群版
     registerWithEureka: true
