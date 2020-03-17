@@ -15,10 +15,11 @@ eureka:
   instance:
     hostname: 35.241.113.30
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+#    false为单机版，true为集群版
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://35.241.113.30:8761/eureka/,http://35.241.113.30:8861/eureka/,http://35.241.113.30:8961/eureka/
 
 management:
   endpoint:
