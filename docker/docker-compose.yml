@@ -5,7 +5,7 @@ services:
     image: 35.241.113.30:5000/jiang-config
     container_name: jiang-config
     ports:
-      - 8769:8769
+      - 8888:8888
     networks:
       - config_network
 networks:
