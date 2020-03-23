@@ -2,7 +2,7 @@ spring:
   application:
     name: jiang-admin
   zipkin:
-    base-url: http://35.241.113.30:9411
+    base-url: http://104.199.166.17:9411
 
 server:
   port: 8084
@@ -10,7 +10,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://35.241.113.30:8761/eureka/,http://35.241.113.30:8861/eureka/,http://35.241.113.30:8961/eureka/
+      defaultZone: http://104.199.166.17:8761/eureka/,http://104.199.166.17:8861/eureka/,http://104.199.166.17:8961/eureka/
 
 management:
   endpoint:

@@ -2,7 +2,7 @@ version: '3.1'
 services:
   jiang-config:
     restart: always
-    image: 35.241.113.30:5000/jiang-config
+    image: 104.199.166.17:5000/jiang-config
     container_name: jiang-config
     ports:
       - 8888:8888
