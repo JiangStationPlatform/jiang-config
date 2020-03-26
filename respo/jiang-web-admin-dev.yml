@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: jiang-web-admin
+  boot:
+    admin:
+      client:
+        url: http://104.199.166.17:8084
+  zipkin:
+    base-url: http://104.199.166.17:9411
+  thymeleaf:
+#    开发时关闭缓存，实时看到页面
+    cache: false
+#    非严格的HTML
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+
+server:
+  port: 8601
+
+hystrix:
+  enable: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://104.199.166.17:8761/eureka/,http://104.199.166.17:8861/eureka/,http://104.199.166.17:8961/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
