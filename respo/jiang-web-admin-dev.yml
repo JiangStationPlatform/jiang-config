@@ -19,8 +19,9 @@ spring:
 server:
   port: 8601
 
-hystrix:
-  enable: true
+feign:
+  hystrix:
+    enabled: true
 
 eureka:
   client:
