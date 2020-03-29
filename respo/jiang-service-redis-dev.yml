@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: jiang-service-redis
+  boot:
+    admin:
+      client:
+        url: http://104.199.166.17:8084
+  zipkin:
+    base-url: http://104.199.166.17:9411
+  redis:
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1ms
+        min-idle: 0
+    sentinel:
+      mastr: mymaster
+      nodes: 104.199.166.17:26379, 104.199.166.17:26380, 104.199.166.17:26381
+
+
+server:
+  port: 8502
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://104.199.166.17:8761/eureka/,http://104.199.166.17:8861/eureka/,http://104.199.166.17:8961/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
