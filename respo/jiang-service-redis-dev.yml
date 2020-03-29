@@ -15,7 +15,7 @@ spring:
         max-wait: -1ms
         min-idle: 0
     sentinel:
-      mastr: mymaster
+      master: mymaster
       nodes: 104.199.166.17:26379, 104.199.166.17:26380, 104.199.166.17:26381
 
 
