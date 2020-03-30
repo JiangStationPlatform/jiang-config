@@ -17,6 +17,14 @@ spring:
       max-active: 20
       test-on-borrow: true
       driver-class-name: com.mysql.jdbc.Driver
+  thymeleaf:
+    #    开发时关闭缓存，实时看到页面
+    cache: false
+    #    非严格的HTML
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
 
 server:
   port: 8503
