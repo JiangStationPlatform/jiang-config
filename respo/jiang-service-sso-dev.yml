@@ -1,6 +1,6 @@
 spring:
   application:
-    name: jiang-service-admin
+    name: jiang-service-sso
   boot:
     admin:
       client:
@@ -19,7 +19,11 @@ spring:
       driver-class-name: com.mysql.jdbc.Driver
 
 server:
-  port: 8501
+  port: 8503
+
+feign:
+  hystrix:
+    enabled: true
 
 eureka:
   client:
