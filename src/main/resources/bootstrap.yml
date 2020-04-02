@@ -11,11 +11,11 @@ spring:
     config:
       label: master
       server:
-      git:
-      uri: https://github.com/JiangStationPlatform/jiang-config.git
-      search-paths: respo
-      username: jshk123@qq.com
-      password: 12345678
+        git:
+          uri: https://github.com/JiangStationPlatform/jiang-config.git
+          search-paths: respo
+          username: jshk123@qq.com
+          password: 12345678
 
 server:
   port: 8888
