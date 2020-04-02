@@ -4,9 +4,9 @@ spring:
   boot:
     admin:
       client:
-        url: http://104.199.166.17:8084
+        url: http://34.80.214.44:8084
   zipkin:
-    base-url: http://104.199.166.17:9411
+    base-url: http://34.80.214.44:9411
   datasource:
     druid:
       url: jdbc:mysql://127.0.0.1:3306/jiang-service-admin?useUnicode=true&characterEncoding=utf-8&useSSL=false
@@ -24,7 +24,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://104.199.166.17:8761/eureka/,http://104.199.166.17:8861/eureka/,http://104.199.166.17:8961/eureka/
+      defaultZone: http://34.80.214.44:8761/eureka/,http://34.80.214.44:8861/eureka/,http://34.80.214.44:8961/eureka/
 
 management:
   endpoint:
