@@ -8,6 +8,7 @@ spring:
   zipkin:
     base-url: http://34.80.214.44:9411
   redis:
+    password: a.123456
     lettuce:
       pool:
         max-active: 8
