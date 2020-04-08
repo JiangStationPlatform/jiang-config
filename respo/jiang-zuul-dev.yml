@@ -1,26 +1,15 @@
 spring:
   application:
     name: jiang-zuul
-  boot:
-    admin:
-      client:
-        url: http://34.80.214.44:8084
-  zipkin:
-    base-url: http://34.80.214.44:9411
 
 server:
   port: 8769
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://34.80.214.44:8761/eureka/,http://34.80.214.44:8861/eureka/,http://34.80.214.44:8961/eureka/
-
-management:
-  endpoint:
-    health:
-      show-details: always
-  endpoints:
-    web:
-      exposure:
-        include: health,info
+zuul:
+  routes:
+    backend-admin:
+      path: /backend/admin/**
+      serviceId: jiang-web-admin
+    backend-posts:
+      path: /backend/posts/**
+      serviceId: jiang-web-posts

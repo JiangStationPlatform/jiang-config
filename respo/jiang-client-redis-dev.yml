@@ -1,0 +1,12 @@
+spring:
+  redis:
+    password: a.123456
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1ms
+        min-idle: 0
+    sentinel:
+      master: mymaster
+      nodes: jiangshikai.com:26379, jiangshikai.com:26380, jiangshikai.com:26381

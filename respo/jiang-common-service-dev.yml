@@ -1,0 +1,5 @@
+mybatis:
+  configuration:
+    cache-enable: true
+  type-aliases-package: cn.jiang.station.platform.common.domain
+  mapper-locations: classpath:mapper/*.xml
