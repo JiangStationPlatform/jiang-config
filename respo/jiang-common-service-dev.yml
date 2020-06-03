@@ -1,5 +1,5 @@
 mybatis:
   configuration:
-    cache-enable: true
+    cache-enabled: true #开启二级缓存
   type-aliases-package: cn.jiang.station.platform.common.domain
   mapper-locations: classpath:mapper/*.xml
