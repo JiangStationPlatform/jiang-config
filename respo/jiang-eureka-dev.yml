@@ -8,8 +8,7 @@ server:
 eureka:
   instance:
     hostname: host
-  client:
-#    false为单机版，true为集群版
+  client: # false为单机版，true为集群版
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
