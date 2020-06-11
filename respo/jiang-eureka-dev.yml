@@ -9,7 +9,7 @@ eureka:
   instance:
     hostname: host
   client: # false为单机版，true为集群版
-    registerWithEureka: true
-    fetchRegistry: true
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://192.168.190.132:8761/eureka/,http://192.168.190.132:8861/eureka/,http://192.168.190.132:8961/eureka/
+      defaultZone: http://192.168.190.132:8761/eureka/ #,http://192.168.190.132:8861/eureka/,http://192.168.190.132:8961/eureka/
