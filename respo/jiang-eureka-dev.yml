@@ -13,4 +13,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://jiangshikai.com:8761/eureka/,http://jiangshikai.com:8861/eureka/,http://jiangshikai.com:8961/eureka/
+      defaultZone: http://192.168.190.132:8761/eureka/,http://192.168.190.132:8861/eureka/,http://192.168.190.132:8961/eureka/

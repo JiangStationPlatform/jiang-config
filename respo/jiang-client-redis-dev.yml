@@ -9,4 +9,4 @@ spring:
         min-idle: 0
     sentinel:
       master: mymaster
-      nodes: jiangshikai.com:26379, jiangshikai.com:26380, jiangshikai.com:26381
+      nodes: 192.168.190.132:26379, 192.168.190.132:26380, 192.168.190.132:26381
